@@ -1,5 +1,24 @@
 # Changelog
 
+## Version&nbsp;1.0.0
+
+<sup>Released on **2026-09-20**</sup>
+
+#### ✨ 新特性
+
+- Update packages.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- Update packages ([28c6a9d](https://github.com/eternallycyf/ims-cat-atlas/commit/28c6a9d))
+
+</details>
+
 ### [Version&nbsp;1.7.2](https://github.com/eternallycyf/ims-template/compare/v1.7.1...v1.7.2)
 
 <sup>Released on **2024-05-15**</sup>
