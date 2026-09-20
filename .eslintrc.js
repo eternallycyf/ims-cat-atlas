@@ -14,4 +14,34 @@ module.exports = {
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': 'warn',
   },
+  overrides: [
+    {
+      files: ['src/components/CatAtlas/**/*.tsx'],
+      rules: {
+        'react/no-unknown-property': [
+          'error',
+          {
+            ignore: [
+              'position',
+              'rotation',
+              'scale',
+              'args',
+              'material',
+              'attach',
+              'castShadow',
+              'receiveShadow',
+              'intensity',
+              'groundColor',
+              'angle',
+              'penumbra',
+              'roughness',
+              'metalness',
+              'shadow-mapSize',
+              'shadow-bias',
+            ],
+          },
+        ],
+      },
+    },
+  ],
 };

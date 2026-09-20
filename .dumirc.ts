@@ -10,12 +10,12 @@ const basePath = `/${repo}/`;
 const isProd = process.env.NODE_ENV === 'production';
 
 const themeConfig: SiteThemeConfig = {
-  name: repo,
+  name: 'Cat Atlas',
   github: homepage,
   logo: isProd ? '/images/origin.png' : `/${repo}/images/origin.png`,
   hero: {
     'zh-CN': {
-      description: 'Ant Design Style 文档站主题包',
+      description: '猫咪品种 3D 图鉴 · React Three Fiber',
       actions: [
         {
           type: 'primary',
@@ -24,37 +24,33 @@ const themeConfig: SiteThemeConfig = {
         },
         {
           text: 'Github',
-          link: 'https://github.com/eternallycyf/',
+          link: homepage,
           openExternal: true,
         },
       ],
       features: featuresZh,
     },
     'en-US': {
-      description: 'dumi2 theme similar to antd v5 website',
+      description: '3D cat breed atlas with React Three Fiber',
       actions: [
         {
           type: 'primary',
           text: 'Start',
-          link: '/guide-en',
-        },
-        {
-          text: 'Config',
-          link: '/config-en',
+          link: '/guide',
         },
       ],
     },
   },
   socialLinks: { github: homepage },
   apiHeader: {
-    sourceUrl: `https://github.com/eternallycyf/ims-template/tree/master/src/components/{atomId}/index.tsx`,
-    docUrl: `https://github.com/eternallycyf/ims-template/tree/master/src/components/{atomId}/index.md`,
-    pkg: 'ims-template',
-    match: ['/ims-template/src/component'],
+    sourceUrl: `https://github.com/eternallycyf/ims-cat-atlas/tree/master/src/components/{atomId}/index.tsx`,
+    docUrl: `https://github.com/eternallycyf/ims-cat-atlas/tree/master/src/components/{atomId}/index.md`,
+    pkg: 'ims-cat-atlas',
+    match: ['/ims-cat-atlas/src/component'],
   },
   footerConfig: {
-    bottom: '2023',
-    copyright: 'Made with ❤️ by eternallycyf - AFX & 数字科技',
+    bottom: '2026',
+    copyright: 'Made with ❤️ by eternallycyf · Cat Atlas',
     columns: footer(repo),
   },
 };

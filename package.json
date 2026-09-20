@@ -1,18 +1,18 @@
 {
-  "name": "ims-template",
-  "version": "1.7.2",
-  "description": "a online docs and npm package template",
+  "name": "ims-cat-atlas",
+  "version": "1.0.0",
+  "description": "cat atlas",
   "keywords": [
-    "npm",
-    "template"
+    "cat",
+    "atlas"
   ],
-  "homepage": "https://github.com/eternallycyf/ims-template",
+  "homepage": "https://github.com/eternallycyf/ims-cat-atlas",
   "bugs": {
-    "url": "https://github.com/eternallycyf/ims-template/issues/new"
+    "url": "https://github.com/eternallycyf/ims-cat-atlas/issues/new"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eternallycyf/ims-template.git"
+    "url": "https://github.com/eternallycyf/ims-cat-atlas.git"
   },
   "license": "MIT",
   "author": "eternallycyf(969475322@qq.com)",
@@ -36,6 +36,8 @@
     "ci": "npm run lint && npm run type-check && npm run doctor && npm run build",
     "clean": "rm -rf es lib dist coverage .dumi/tmp .eslintcache",
     "dev": "dumi dev",
+    "dev:web": "pnpm --dir website dev",
+    "build:web": "pnpm --dir website build",
     "docs:build": "dumi build",
     "docs:preview": "yarn docs:build && cd dist && npx serve",
     "doctor": "father doctor",
@@ -72,6 +74,10 @@
   },
   "devDependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@react-three/drei": "9.114.3",
+    "@react-three/fiber": "8.17.10",
+    "@types/three": "^0.186.0",
+    "three": "^0.186.0",
     "@commitlint/cli": "^17",
     "@testing-library/react": "^14",
     "@types/lodash": "^4.14.199",
@@ -109,8 +115,26 @@
   },
   "peerDependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@react-three/drei": ">=9",
+    "@react-three/fiber": ">=8",
     "antd": "^5.9.4",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "three": ">=0.150"
+  },
+  "peerDependenciesMeta": {
+    "@react-three/drei": {
+      "optional": true
+    },
+    "@react-three/fiber": {
+      "optional": true
+    },
+    "three": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@10.16.1",
+  "engines": {
+    "node": "24.x"
   },
   "publishConfig": {
     "access": "public",

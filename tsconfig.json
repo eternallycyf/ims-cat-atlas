@@ -21,9 +21,9 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "@/*": ["./src"],
-      "ims-template": ["./src"],
-      "ims-template/*": ["./src/*"]
+      "ims-cat-atlas": ["./src"],
+      "ims-cat-atlas/*": ["./src/*"]
     }
   },
-  "exclude": ["node_modules", "dist", "server"]
+  "exclude": ["node_modules", "dist", "server", "website"]
 }
