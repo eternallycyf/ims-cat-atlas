@@ -1,5 +1,15 @@
 # Cat Atlas
 
+猫咪品种 3D 图鉴站点。
+
+> 📊 Total: <kbd>**1**</kbd>
+
+<a href="https://github.com/eternallycyf" title="eternallycyf">
+  <img src="https://avatars.githubusercontent.com/u/63464198?v=4" width="50" />
+</a>
+
+# Cat Atlas
+
 猫咪品种 3D 图鉴站点。无外部模型文件，使用程序化低模猫 + React Three Fiber 交互展厅。
 
 ## 快速开始
